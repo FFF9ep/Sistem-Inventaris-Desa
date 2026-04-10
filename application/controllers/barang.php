@@ -15,7 +15,7 @@ class Barang extends CI_Controller {
         $data['listBarang'] = $listBarang;
         $data['titleTambahBarang'] = 'Tambah Barang';
         $data['titleDaftarBarang'] = 'Daftar Barang';
-        $this->load->view('barang/index', $data);
+        $this->loadPartials('barang/index', $data);
     }
 
     public function tambah_barang()
